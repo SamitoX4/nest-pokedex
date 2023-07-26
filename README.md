@@ -46,13 +46,20 @@ $ yarn run start:prod
 ```
 
 ## Up MongoDB
-
 * Go into the list of docker containers and see if there is a container with a database that you require, if not, go into your space with docker-compose.yml manifests and create one to connect to.
 * Note: To connect go to the docker-compose.yml file to the network_mode line and set it as follows network_mode: "container:container_name_with_database"
 
 ## Used Stack
 * MongoDB
 * Nest
+
+## Populate database with test data in pokemon table/document
+```
+localhost:3000/api/v2/seed
+```
+
+## Clone the next file:
+* __.env.template__ y rename copy to __.env__
 
 ## License
 
